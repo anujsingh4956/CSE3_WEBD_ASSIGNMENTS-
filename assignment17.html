@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 17 Output</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 15px;
+            font-size: 12px;
+        }
+
+        .field-row {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+            width: 155px;
+            height: 18px;
+            border: 1px solid #888888;
+            padding: 1px 4px;
+            font-size: 11px;
+            box-sizing: border-box;
+        }
+
+        input[type="number"] {
+            width: 48px;
+            height: 18px;
+            border: 1px solid #888888;
+            padding: 1px 3px;
+            font-size: 11px;
+            box-sizing: border-box;
+        }
+
+        button {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            padding: 2px 6px;
+            border: 1px solid #888888;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="submit.php" method="post">
+        <div class="field-row">
+            <input type="text" name="fullname" placeholder="Full name" required>
+        </div>
+
+        <div class="field-row">
+            <input type="email" name="email" placeholder="you@college.edu" required>
+        </div>
+
+        <div class="field-row">
+            <input type="tel" name="mobile" placeholder="10-digit mobile" pattern="[0-9]{10}" title="Enter exactly 10 digits" required>
+        </div>
+
+        <div class="field-row">
+            <input type="password" name="password" placeholder="Min 6 characters" minlength="6" required>
+        </div>
+
+        <div class="field-row">
+            <input type="number" name="age" placeholder="Age (17-30)" min="17" max="30" required>
+        </div>
+
+        <div class="field-row">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+
+</body>
+</html>
