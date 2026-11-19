@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 16 Output</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 15px;
+            font-size: 12px;
+        }
+
+        .field-row {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            font-size: 11px;
+            margin-bottom: 3px;
+        }
+
+        .course-label {
+            display: inline-block;
+            margin-bottom: 0;
+            margin-right: 4px;
+        }
+
+        select {
+            height: 18px;
+            border: 1px solid #888888;
+            font-size: 11px;
+            padding: 0 3px;
+        }
+
+        textarea {
+            width: 225px;
+            height: 55px;
+            border: 1px solid #888888;
+            padding: 3px 4px;
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            resize: both;
+            box-sizing: border-box;
+        }
+
+        .btn-group {
+            margin-top: 8px;
+        }
+
+        button {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            padding: 2px 6px;
+            border: 1px solid #888888;
+            background-color: #f0f0f0;
+            margin-right: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <div class="field-row">
+            <label for="course" class="course-label">Course:</label>
+            <select id="course" name="course">
+                <option value="ECE" selected>ECE</option>
+                <option value="CSE">CSE</option>
+                <option value="ME">ME</option>
+                <option value="EE">EE</option>
+            </select>
+        </div>
+
+        <div class="field-row">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" placeholder="Write here..."></textarea>
+        </div>
+
+        <div class="btn-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button">Click Me</button>
+        </div>
+    </form>
+
+</body>
+</html>
