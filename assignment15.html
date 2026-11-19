@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 15 Output</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 15px;
+            font-size: 12px;
+        }
+
+        fieldset {
+            border: 1px solid #999999;
+            padding: 8px 12px 12px 12px;
+            width: 310px;
+        }
+
+        legend {
+            font-size: 11px;
+            padding: 0 3px;
+        }
+
+        .field-row {
+            margin-bottom: 8px;
+        }
+
+        .field-label {
+            display: inline-block;
+            width: 58px;
+            font-size: 11px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            width: 135px;
+            height: 16px;
+            border: 1px solid #888888;
+            padding: 1px 3px;
+            font-size: 11px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            vertical-align: middle;
+            margin: 0 2px 0 0;
+        }
+
+        .inline-option {
+            font-size: 11px;
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <div class="field-row">
+                <label for="name" class="field-label">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="field-row">
+                <label for="email" class="field-label">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="field-row">
+                <label for="password" class="field-label">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="field-row">
+                <span class="field-label">Gender:</span>
+                <label class="inline-option"><input type="radio" name="gender" value="male">Male</label>
+                <label class="inline-option"><input type="radio" name="gender" value="female">Female</label>
+            </div>
+
+            <div class="field-row">
+                <span class="field-label">Hobbies:</span>
+                <label class="inline-option"><input type="checkbox" name="hobbies" value="reading">Reading</label>
+                <label class="inline-option"><input type="checkbox" name="hobbies" value="coding">Coding</label>
+            </div>
+
+            <div class="field-row">
+                <label for="dob" class="field-label">DOB:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>
