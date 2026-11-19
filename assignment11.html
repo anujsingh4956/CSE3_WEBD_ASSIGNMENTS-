@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11 Output</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 15px;
+            font-size: 12px;
+        }
+
+        .skip-link {
+            display: inline-block;
+            color: #1a0dab;
+            text-decoration: underline;
+            font-size: 11px;
+        }
+
+        nav {
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: #1a0dab;
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 8px 0 12px 0;
+        }
+
+        .search-wrap {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .search-wrap input[type="search"] {
+            width: 170px;
+            height: 18px;
+            border: 1px solid #999999;
+            padding: 1px 4px;
+            font-size: 11px;
+        }
+
+        .search-wrap button {
+            height: 20px;
+            margin-left: 2px;
+            padding: 0 5px;
+            font-size: 10px;
+            border: 1px solid #999999;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        .label-row {
+            display: block;
+            font-size: 11px;
+        }
+
+        .label-row input[type="text"] {
+            width: 145px;
+            height: 16px;
+            border: 1px solid #999999;
+            padding: 1px 4px;
+            margin-left: 4px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav aria-label="Primary navigation">
+        <a href="#home">Home</a> <a href="#help">Help</a>
+    </nav>
+
+    <main id="main-content">
+        <h1>Accessible Page</h1>
+
+        <div class="search-wrap">
+            <input type="search" id="quick-search" aria-label="Quick search">
+            <button type="button" onclick="document.getElementById('quick-search').value=''" aria-label="Clear search">x</button>
+        </div>
+
+        <div class="label-row">
+            <label for="search-input">Search:</label>
+            <input type="text" id="search-input" name="search">
+        </div>
+    </main>
+
+</body>
+</html>
