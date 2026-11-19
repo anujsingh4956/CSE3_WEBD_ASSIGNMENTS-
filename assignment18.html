@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 18 Output</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 15px;
+            font-size: 12px;
+        }
+
+        header.page-banner {
+            background-color: #1b287c;
+            color: #ffffff;
+            text-align: center;
+            padding: 12px 10px;
+            margin-bottom: 14px;
+        }
+
+        header.page-banner h1 {
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        main section h2 {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            margin: 10px 0 8px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 14px;
+        }
+
+        caption {
+            font-size: 10px;
+            margin-bottom: 3px;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid #999999;
+            padding: 3px 6px;
+            font-size: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e6e9ef;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        fieldset {
+            border: 1px solid #888888;
+            padding: 8px 10px 12px 10px;
+            margin: 0 0 14px 0;
+        }
+
+        legend {
+            font-size: 10px;
+            padding: 0 3px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            font-size: 10px;
+            margin-bottom: 2px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 145px;
+            height: 17px;
+            border: 1px solid #888888;
+            font-size: 10px;
+            padding: 1px 3px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+
+        textarea {
+            width: 100%;
+            height: 44px;
+            border: 1px solid #888888;
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            padding: 2px 4px;
+            box-sizing: border-box;
+            resize: both;
+        }
+
+        button[type="submit"] {
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            padding: 2px 6px;
+            border: 1px solid #888888;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        footer.page-footer {
+            background-color: #1b287c;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px 10px;
+            font-size: 9px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="page-banner">
+        <h1>ABC College Admission 2026</h1>
+    </header>
+
+    <main>
+        <section aria-labelledby="courses-heading">
+            <h2 id="courses-heading">Courses and Fees</h2>
+
+            <table>
+                <caption>Available Courses</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Course</th>
+                        <th scope="col">Seats</th>
+                        <th scope="col">Fees</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Tech CSE</td>
+                        <td>120</td>
+                        <td>₹90,000</td>
+                    </tr>
+                    <tr>
+                        <td>BCA</td>
+                        <td>60</td>
+                        <td>₹45,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading" hidden>Application Form</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Application Form</legend>
+
+                    <div class="form-group">
+                        <label for="student-name">Name:</label>
+                        <input type="text" id="student-name" name="student_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-email">Email:</label>
+                        <input type="email" id="student-email" name="student_email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course-select">Course:</label>
+                        <select id="course-select" name="course" required>
+                            <option value="B.Tech CSE" selected>B.Tech CSE</option>
+                            <option value="BCA">BCA</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="statement">Statement:</label>
+                        <textarea id="statement" name="statement" required></textarea>
+                    </div>
+
+                    <button type="submit">Apply</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        © 2026 ABC College
+    </footer>
+
+</body>
+</html>
